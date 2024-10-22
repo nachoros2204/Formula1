@@ -1,29 +1,51 @@
 package src;
-public class Persona {
-    String nombre;
-    String nacionalidad;
 
+
+public class Persona {
+    private String nombre;
+    private String nacionalidad;
+    
+    //metodo constructor
     public Persona(String nacionalidad, String nombre) {
         this.nacionalidad = nacionalidad;
         this.nombre = nombre;
     }
 
-    public String getNombre() {
+    //doble encapsulamiento de los getter y setter
+    private String getNombre() {
         return nombre;
     }
 
-    public String getNacionalidad() {
+    private String getNacionalidad() {
         return nacionalidad;
     }
 
-    public void setNombre(String nombre) {
+    private void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setNacionalidad(String nacionalidad) {
+    private void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
     
+    //metodos publicos de los getter y setters encapsulados
+    public String obtenerNombre() {
+        return getNombre();
+    }
 
+    public void cambiarNombre(String nombre) {
+        return setNombre(nombre);
+    }
+    
+    public String obtenerNacionalidad() {
+        return getNacionalidad();
+    }
+    
+    public void cambiarNacionalidad(String nacionalidad) {
+        return setNacionalidad(nacionalidad);
+    }
+    
+
+    
 
 }
