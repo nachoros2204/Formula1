@@ -3,15 +3,11 @@ import org.junit.Test;
 import org.junit.Before;    
     
 public class PersonaTest {
-
-    @Before
-    public void setup(){
-
-    }
         
     @Test
     public void test() {
-        
+        Piloto piloto1 = new Piloto("Franco Colapinto", "Argentina");
+
     }
 }
     
