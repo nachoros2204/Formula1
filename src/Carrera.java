@@ -1,9 +1,12 @@
 package src;
 
-import java.text.SimpleDateFormat;
+
+import java.sql.Date;
+import java.util.List;
 
 public class Carrera {
-    SimpleDateFormat fecha; //ver esto
+    private Date fecha;
+    private 
 
 
 }

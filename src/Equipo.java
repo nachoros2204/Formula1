@@ -6,12 +6,14 @@ import java.util.List;
 
 public class Equipo {
     private String nombre;
-    private List<Piloto> listapilotos = new ArrayList<>();
+    private List<Piloto> listapilotos;
 
     public Equipo(String nombre) {
         this.nombre = nombre;
+        this.listapilotos = new ArrayList<>();
     }
     
+
     public void agregarPilotos(Piloto piloto) {
         listapilotos.add(piloto);
     }

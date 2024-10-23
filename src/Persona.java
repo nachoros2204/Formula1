@@ -6,7 +6,7 @@ public class Persona {
     private String nacionalidad;
     
     //metodo constructor
-    public Persona(String nacionalidad, String nombre) {
+    public Persona(String nombre, String nacionalidad) {
         this.nacionalidad = nacionalidad;
         this.nombre = nombre;
     }
@@ -34,7 +34,7 @@ public class Persona {
     }
 
     public void cambiarNombre(String nombre) {
-        return setNombre(nombre);
+        setNombre(nombre);
     }
     
     public String obtenerNacionalidad() {
@@ -42,7 +42,7 @@ public class Persona {
     }
     
     public void cambiarNacionalidad(String nacionalidad) {
-        return setNacionalidad(nacionalidad);
+        setNacionalidad(nacionalidad);
     }
     
 
