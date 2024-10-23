@@ -12,4 +12,9 @@ public class Mecanico extends Persona {
         return obtenerNombre() + " (" + obtenerNacionalidad() + ")";
     }
 
+    @Override
+    public String getNombreParaLED() {
+        return super.getNombreParaLED();
+    }
+
 }

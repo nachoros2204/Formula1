@@ -1,6 +1,10 @@
-package src;
+package src.interfaces;
 
 import java.util.List;
+
+import src.Sponsor;
+import src.SponsorContrato;
+
 import java.util.Date;
 
 public interface ISponsoreable {

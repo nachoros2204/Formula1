@@ -1,7 +1,8 @@
 package src;
 
+import src.interfaces.INombreParaLED;
 
-public class Persona {
+public class Persona implements INombreParaLED {
     private String nombre;
     private String nacionalidad;
     
@@ -43,6 +44,11 @@ public class Persona {
     
     public void cambiarNacionalidad(String nacionalidad) {
         setNacionalidad(nacionalidad);
+    }
+
+    @Override
+    public String getNombreParaLED() {
+        return "Piloto:" + nombre;
     }
     
 

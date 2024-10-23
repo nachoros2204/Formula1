@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import src.interfaces.INombreParaLED;
+import src.interfaces.ISponsoreable;
 
-public class Equipo implements ISponsoreable {
+
+public class Equipo implements ISponsoreable, INombreParaLED {
     private String nombre;
     private List<Piloto> listapilotos;
     private List<SponsorContrato> sponsors;
@@ -64,5 +67,11 @@ public class Equipo implements ISponsoreable {
     public boolean sponsorsHabilitados() {
         return !sponsors.isEmpty();
     }
+
+
+    @Override
+    public String getNombreParaLED() {
+        return "Equipo:" + nombre;
+    }
 }
-}
+

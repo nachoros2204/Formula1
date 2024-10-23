@@ -1,7 +1,8 @@
 package src;
 
+import src.interfaces.INombreParaLED;
 
-public class Sponsor {
+public class Sponsor implements INombreParaLED {
     private String nombre;
 
     public Sponsor(String nombre) {
@@ -14,6 +15,11 @@ public class Sponsor {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public String getNombreParaLED() {
+        return "Sponsor:" + nombre;
     }
 
     

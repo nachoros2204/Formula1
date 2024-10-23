@@ -12,4 +12,9 @@ public class Piloto extends Persona {
         return obtenerNombre() + " (" + obtenerNacionalidad() + ")";
     }
 
+    @Override
+    public String getNombreParaLED() {
+        return super.getNombreParaLED();
+    }
+
 }
