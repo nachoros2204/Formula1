@@ -1,26 +1,26 @@
 package src;
 
 
-import java.sql.Date;
+
 import java.util.List;
 
 public class Carrera {
-    private Date fecha;
+    private String fecha;
     private Circuito circuito; // Relación con Circuito
     private List<Piloto> listaPilotos; // Relación con varios pilotos (participantes)
 
-    public Carrera(Date fecha, Circuito circuito, List<Piloto> listaPilotos) {
-        this.fecha = fecha;
+    public Carrera(String fechaCarrera, Circuito circuito, List<Piloto> listaPilotos) {
+        this.fecha = fechaCarrera;
         this.circuito = circuito;
         this.listaPilotos = listaPilotos;
     }
 
     // Getters y Setters
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
