@@ -38,7 +38,6 @@ public class EquipoTest {
         assertEquals("Franco Colapinto", listapilotosEquipo2.get(0).obtenerNombre());
         assertEquals("Argentina", listapilotosEquipo2.get(0).obtenerNacionalidad());
 
-
         assertEquals("Max Verstappen", listapilotosEquipo1.get(0).obtenerNombre());
         assertEquals("Holanda", listapilotosEquipo1.get(0).obtenerNacionalidad());
         assertEquals("Sergio Pérez", listapilotosEquipo1.get(1).obtenerNombre());
@@ -48,6 +47,7 @@ public class EquipoTest {
         assertTrue(listapilotosEquipo2.contains(piloto1));
         assertTrue(listapilotosEquipo1.contains(piloto2));
         assertTrue(listapilotosEquipo1.contains(piloto3));
+
     }
 
     
