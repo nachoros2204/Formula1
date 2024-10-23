@@ -65,3 +65,4 @@ public class Equipo implements ISponsoreable {
         return !sponsors.isEmpty();
     }
 }
+}
